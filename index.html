@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6699035b30.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/benjame-logo.png" class="logo" href="#header">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Hi,</p>
+            <h1>I'm <span>Benjame Abi</span><br>a student from <a href="https://www.foocoding.org">Foocoding.</a></h1>
+        </div>
+    </div>
+  </div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/benjame-logo-black.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a freelance creative working mainly with visual art, communication and digital marketing. I provide individuals, companies and organisations with the necessary tools to navigate todays digital space.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('profile')" data-tab="profile">Profile</p>
+                    <p class="tab-links" onclick="opentab('address')" data-tab="address">Address</p>
+                    <p class="tab-links" onclick="opentab('education')" data-tab="education">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="profile">
+                    <ul>
+                        <li><span>D.O.B</span><br>01-11-94</li>
+                        <li><span>Pronoun</span><br>He/Him</li>
+                        <li><span>Nationality</span><br>Rwandese</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="address">
+                    <ul>
+                        <li><span>Street</span><br>Östergatan 9B</li>
+                        <li><span>Zip</span><br>241 39</li>
+                        <li><span>Ort</span><br>Eslöv</li>
+                        <li><span>Country</span><br>Sverige</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2011</span><br>O-Levels.</li>
+                        <li><span>2020</span><br>Undergrad</li>
+                        <li><span>2023</span><br>Student at Foocoding.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------experience------------ -->
+  <div id="experience">
+    <div class="container">
+        <h1 class="sub-title">My experience</h1>
+        <div class="experience-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>HTML</h2>
+                <p>HTML is the standard markup language for creating Web pages.</p>
+                <a href="https://github.com/foocoding/curriculum">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>CSS</h2>
+                <p>CSS is a language that describes the style of an HTML document. </p>
+                <a href="https://github.com/foocoding/curriculum">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>JAVASCRIPT</h2>
+                <p>JavaScript is a scripting or programming language that allows you to implement complex features on web pages.</p>
+                <a href="https://github.com/foocoding/curriculum">Learn more</a>
+            </div>
+        </div>
+    </div>
+  </div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My GitHub Portfolio</h1>
+        <span> </span>
+        <div id="folder-list" class="work-list">
+            <!-- Folder cards will be dynamically added here -->
+        </div>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> Hey@benjameabi.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> (+46) 729 236 483 </p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="https://www.benjameabi.com" download class="btn btn2">Visit Site</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2024 <a href="https://www.benjameabi.com">Benjame abi</a></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  </script>
+</body>
+</html>
